@@ -1,0 +1,8 @@
+{
+   //update para crear un movimiento
+    db.usuario.update(
+   { _id: ObjectId("63ff934c54f4ad61c4f90d63") },
+   { $push: { "tarjeta.0.movimientos": { fechaMovimiento: new Date(), tipoMovimiento: true, monto: 120 } } }
+)
+
+}
